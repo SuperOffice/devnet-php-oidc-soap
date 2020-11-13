@@ -78,17 +78,16 @@ class SystemUserAgent extends SoAgent
         if ($this->fault) {
             return $result;
         }
-        else {
-            $error = $this->getError();
-            if ($error) {
-                return $error;
-            }
-            else {
-                if($noResponse) {
-                    return $result;
-                }
-                return $result["Token"];
-            }
+
+        $error = $this->getError();
+        if ($error) {
+            return $error;
         }
+
+        if($noResponse) {
+            return $result;
+        }
+
+        return $result["Token"];
     }
 }
