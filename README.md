@@ -16,7 +16,7 @@ Please feel free to contribute with finishing the agent classes, and making help
 1. clone the repository
 2. register an app @SuperOffice
 3. wait for SuperOffice to send you your app id, app token and private certificate
-4. convert the private certificate xml into a pem file - you can [do that here](devnet-tokens.azurewebsites.net).
+4. convert the private certificate xml into a pem file - you can [do that here](https://devnet-tokens.azurewebsites.net/rsa).
 5. put the contents of the generated PEM into the certificates/private.pem file
 6. alter the settings.php file
 7. upload to a php server (or run it locally)
